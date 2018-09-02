@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sql Db operation</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>SQL Db Operation: </h1>
+    <form method="POST" action="/sqlDBoperation/insertData">
+        <label>Insert Operation:</label><br><br>
+        <label>First Name:</label>
+        <input type="text" name="firstName" value="" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" value=""required>
+
+        <label>userName:</label>
+        <input type="text" name="userName" value="" required>
+        <input type="submit" value="Insert" />
+    </form><br><br><br>
+
+    <form method="POST" action="/sqlDBoperation/updateData">
+        <label>Update Operation:</label><br><br>
+        <label>userName*:</label>
+        <input type="text" name="userName" value="" required>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" value="" >
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" value="" >
+       
+        <input type="submit" value="Update" /><br>
+        <p>* you can not change the value of userName</p>
+    </form>
+
+
+    <form method="post" action="/sqlDBoperation/deleteData">
+        <label>Delete Operation:</label><br><br>
+        <label>userName*:</label>
+        <input type="text" name="userName" value="" required>
+       
+        <input type="submit" value="Delete" /><br>
+        <p>* you can not change the value of userName</p>
+    </form>
+
+
+    <form method="get" action="/sqlDBoperation/fetchRecords">
+        <label>Retreive Operation:</label><br><br>
+        <label>userName*:</label>
+        <input type="text" name="userName"  required>
+       
+        <input type="submit" value="Retreive" /><br>
+        <p>* you can not change the value of userName</p>
+    </form>
+
+
+    
+
+
+</body>
+
+</html>
